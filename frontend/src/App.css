@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+  background: url('../public/images/weather-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container */
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Stylish Buttons */
+.nav-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-button {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* Supplier List Container */
+.supplier-list-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.supplier-list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* No Suppliers Message */
+.no-suppliers {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Supplier Grid */
+.supplier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Supplier Card */
+.supplier-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.supplier-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Supplier Icon */
+.icon-container {
+  background: #007bff;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.supplier-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* Supplier Info */
+.supplier-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.supplier-score {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Compliance Upload Styling */
+.upload-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.upload-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upload-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.upload-input:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+/* Date Label */
+.date-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Upload Button */
+.upload-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Success and Error Messages */
+.success-message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .upload-container {
+    width: 90%;
+  }
+}
+
+/* Container for the supplier detail page */
+.supplier-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.supplier-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.supplier-info {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.supplier-info span {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Card styling for sections */
+.card {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.card h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Preformatted text for contract terms */
+.contract-terms {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Markdown content styling */
+.markdown-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Error and loading messages */
+.error-message, .loading-message {
+  text-align: center;
+  color: #d9534f;
+  font-size: 1.2rem;
+}

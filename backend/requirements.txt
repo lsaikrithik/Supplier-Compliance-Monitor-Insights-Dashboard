@@ -1,0 +1,16 @@
+fastapi[all]
+uvicorn
+psycopg2-binary
+asyncpg
+sqlalchemy
+python-multipart
+aiofiles
+pandas
+requests
+python-dotenv
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+pydantic
+typing-extensions

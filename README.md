@@ -153,5 +153,4 @@ The frontend provides an interactive interface for users to monitor suppliers, u
 - **Backend:** Manages data, API requests, and integrations.
 - **Frontend:** Provides an intuitive user interface.
 - **Integration:** Uses API communication between frontend and backend for seamless functionality.
-``` 
 
